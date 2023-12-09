@@ -12,7 +12,7 @@ $ pkg install python git -y
 $ git clone https://github.com/Whomrx666/Link-x
 $ cd Link-x
 $ python setup.py
-$python link-x.py
+$ python link-x.py
 ```
 ### Attack Methods:
 * Camera
