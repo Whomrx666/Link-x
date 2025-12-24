@@ -2,7 +2,7 @@
 ![Link-x preview](Link-x.jpg)
 
 ## introduction
-This Tool can Hack and Grab data of Camera, Voice, Clipboard, Location.It can Grab As much info as Possible from Victims Device.All this requires Just a Malicious Link!
+This Tool can Hack and Grab data of Camera, Voice, Clipboard, Location.It can Grab As much info as Possible from Victims Device.All this requires Just a Malicious Link! {UPDATED V.2.0}
 
 ## Instalations
 ```
