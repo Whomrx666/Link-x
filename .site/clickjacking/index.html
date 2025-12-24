@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're a Winner! </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #1a1a2e, #0d0b1a);
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      background: rgba(15, 15, 35, 0.9);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+      border: 2px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .logo {
+      width: 80px;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      color: #ffd700;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+    }
+
+    .prize {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 16px;
+      border-radius: 14px;
+      margin: 20px 0;
+      border: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    .prize-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background: linear-gradient(to right, #ff9d00, #ffd700);
+      color: #000;
+      font-weight: 700;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(255, 157, 0, 0.5);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 25px rgba(255, 157, 0, 0.8);
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <i class="fas fa-gift fa-3x"></i>
+    </div>
+    <h1>You're a Winner! </h1>
+    <p style="margin-bottom: 20px; color: #ccc;">
+      Congratulations! You've been randomly selected to receive:
+    </p>
+
+    <div class="prize">
+      <div class="prize-item">
+        <i class="fas fa-mobile-alt" style="color: #4CAF50;"></i>
+        <span>Apple iPhone 16 Pro (128GB)</span>
+      </div>
+      <div class="prize-item">
+        <i class="fas fa-dollar-sign" style="color: #FF9800;"></i>
+        <span>Cash Prize: $1,000 USD</span>
+      </div>
+    </div>
+
+    <button class="btn" id="claimBtn">
+      <i class="fas fa-arrow-right"></i> Continue to Claim
+    </button>
+
+    <div class="footer">
+      Sponsored by Global Giveaway Network &bull; Limited Time Offer
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
